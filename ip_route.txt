@@ -149,4 +149,41 @@ C       192.168.6.8/30 is directly connected, GigabitEthernet0/3/0
 L       192.168.6.9/32 is directly connected, GigabitEthernet0/3/0
 S*   0.0.0.0/0 [1/0] via 192.168.6.10
 
+Индивидуальное задание
+Router1:
+Gateway of last resort is 192.168.6.9 to network 0.0.0.0
 
+S    192.168.1.0/24 [1/0] via 192.168.6.5
+S    192.168.2.0/24 [1/0] via 192.168.6.5
+     192.168.3.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.3.0/24 is directly connected, GigabitEthernet0/0/0
+L       192.168.3.254/32 is directly connected, GigabitEthernet0/0/0
+     192.168.4.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.4.0/24 is directly connected, GigabitEthernet0/1/0
+L       192.168.4.254/32 is directly connected, GigabitEthernet0/1/0
+     192.168.5.0/26 is subnetted, 2 subnets
+S       192.168.5.128/26 [1/0] via 192.168.6.14
+S       192.168.5.192/26 [1/0] via 192.168.6.5
+     192.168.6.0/24 is variably subnetted, 7 subnets, 3 masks
+C       192.168.6.4/30 is directly connected, GigabitEthernet0/1
+L       192.168.6.6/32 is directly connected, GigabitEthernet0/1
+C       192.168.6.8/30 is directly connected, GigabitEthernet0/3/0
+L       192.168.6.10/32 is directly connected, GigabitEthernet0/3/0
+C       192.168.6.12/30 is directly connected, GigabitEthernet0/2
+L       192.168.6.13/32 is directly connected, GigabitEthernet0/2
+S       192.168.6.64/27 [1/0] via 192.168.6.14
+S*   0.0.0.0/0 [1/0] via 192.168.6.9
+
+Router4:
+
+Gateway of last resort is 192.168.6.13 to network 0.0.0.0
+
+     192.168.5.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.5.128/26 is directly connected, GigabitEthernet0/1
+L       192.168.5.190/32 is directly connected, GigabitEthernet0/1
+     192.168.6.0/24 is variably subnetted, 4 subnets, 3 masks
+C       192.168.6.12/30 is directly connected, GigabitEthernet0/2
+L       192.168.6.14/32 is directly connected, GigabitEthernet0/2
+C       192.168.6.64/27 is directly connected, GigabitEthernet0/0
+L       192.168.6.94/32 is directly connected, GigabitEthernet0/0
+S*   0.0.0.0/0 [1/0] via 192.168.6.13
